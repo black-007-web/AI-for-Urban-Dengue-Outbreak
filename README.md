@@ -96,3 +96,8 @@ No external APIs are called by the backend. No LLM is called at runtime.
 - Frontend (Vercel): _to be added_
 
 Until then, run locally with the two commands above; the video demo uses localhost.
+
+### Data and open-source libraries
+
+- Dataset: hackathon-provided `hackathon_preli_dataset.xlsx` (2016–2025, 60 wards, 5 cities).
+- Libraries: scikit-learn, pandas, NumPy, SHAP, FastAPI, React, Vite, Recharts, Leaflet, Tailwind CSS.
