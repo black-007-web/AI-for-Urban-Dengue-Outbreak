@@ -2,7 +2,11 @@
  * Single source of truth for tier colours, thresholds, action text,
  * feature metadata and runtime settings. No component hardcodes these.
  */
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+// Deployed backend (Railway). VITE_API_BASE_URL overrides it; `npm run dev` uses localhost.
+export const PRODUCTION_API_URL = 'https://ai-for-urban-dengue-outbreak-production.up.railway.app';
+export const API_BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL || (import.meta.env.PROD ? PRODUCTION_API_URL : 'http://localhost:8000')
+).replace(/\/+$/, '');
 export const FORCE_MOCK = String(import.meta.env.VITE_USE_MOCK).toLowerCase() === 'true';
 export const DEFAULT_AS_OF = import.meta.env.VITE_DEFAULT_AS_OF || '2025-08-04';
 

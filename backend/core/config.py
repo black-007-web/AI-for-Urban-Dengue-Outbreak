@@ -26,7 +26,8 @@ FRONTEND_ORIGINS = [
 ]
 # Optional regex so Vercel preview deployments are accepted,
 # e.g. FRONTEND_ORIGIN_REGEX=https://.*\.vercel\.app
-FRONTEND_ORIGIN_REGEX = os.getenv("FRONTEND_ORIGIN_REGEX") or None
+# Default allows any Vercel deployment (production and previews).
+FRONTEND_ORIGIN_REGEX = os.getenv("FRONTEND_ORIGIN_REGEX", r"https://.*\.vercel\.app") or None
 # Chronological split used in the training notebook (Section 07, cell 61):
 # first 70% of weeks train, next 15% validation, final 15% test.
 # The exported models were refit on train+validation, so only the test window

@@ -92,8 +92,8 @@ No external APIs are called by the backend. No LLM is called at runtime.
 
 ## Live deployment
 
-- Backend (Railway): _to be added_
-- Frontend (Vercel): _to be added_
+- Backend (Railway): https://ai-for-urban-dengue-outbreak-production.up.railway.app (health: `/api/health`, docs: `/docs`)
+- Frontend (Vercel): import this repo with Root Directory `frontend`; `frontend/.env.production` already points the build at the Railway backend, so no environment variables are required.
 
 Until then, run locally with the two commands above; the video demo uses localhost.
 
