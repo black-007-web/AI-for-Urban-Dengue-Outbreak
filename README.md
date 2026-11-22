@@ -89,3 +89,10 @@ The model is loaded once from joblib, and all wards are predicted and explained 
 | Google Fonts | Web fonts in the frontend |
 
 No external APIs are called by the backend. No LLM is called at runtime.
+
+## Live deployment
+
+- Backend (Railway): _to be added_
+- Frontend (Vercel): _to be added_
+
+Until then, run locally with the two commands above; the video demo uses localhost.
