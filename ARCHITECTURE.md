@@ -96,3 +96,5 @@ Inference for all 60 wards takes well under a second on a single CPU (0.1–0.5 
 - The dataset ends 2025-12-29, so the system runs in **replay mode**: forecasts can be made for any as-of date in the data that has 12 weeks of history. No live 2026 surveillance feed exists at ward level.
 - Ward map positions are approximate (spread around each city's centroid); the dataset has no ward coordinates.
 - Final sprint: ingest live weather (Open-Meteo, free and keyless), accept weekly case uploads from health offices, and retrain on a schedule.
+
+_Last reviewed by the team on 2026-11-22._
