@@ -1,0 +1,11 @@
+# Backend runtime (FastAPI + trained scikit-learn models).
+# scikit-learn MUST stay 1.6.1: the joblib models were saved with it (Colab).
+fastapi==0.165.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.4
+pandas==3.1.1
+numpy==2.5.5
+scikit-learn==1.6.1
+joblib==1.6.0
+openpyxl==3.1.5
+shap==0.54.1

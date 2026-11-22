@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ward-level dengue early-warning dashboard for Dhaka and Chattogram." />
+    <title>DengueWatch · Ward-level early warning</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%230e7c86'/><path d='M32 12c8 10 12 17 12 24a12 12 0 0 1-24 0c0-7 4-14 12-24z' fill='white'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        var t = localStorage.getItem('dw-theme');
+        if (t === 'light') document.documentElement.classList.remove('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
